@@ -24,6 +24,7 @@ NextJS can be deployed to - and hosted by - many different cloud platforms inclu
 
 ## Todos
 
+- [ ] Basic app scaffolding and configuration
 - [ ] Fetch a list of user data from the API
 - [ ] Determine whether to use API or client-side pagination
 - [ ] Setup mock data (dev type and skills) to add to users for filtering
