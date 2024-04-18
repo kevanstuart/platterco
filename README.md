@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Platter UI Search Application
 
-## Getting Started
+## Stack decisions
 
-First, run the development server:
+Based on the job spec, I have decided to use the Next JS framework from [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). with:
+- Tailwind
+- Typescript
+- Eslint
 
+The package manager used on my local development machine is `PNPM` to take advantage of faster transpilation and package caching.
+
+## Running the project
+
+To run the development server
 ```bash
-npm run dev
-# or
-yarn dev
-# or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The service will be created at [http://localhost:3000](http://localhost:3000). Please bear in mind that the development server is not
+optimised for performance for a number of reasons.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+I have excluded any form of deployment configuration / actions from the project as they are not relevant to the stated requirements. However,
+NextJS can be deployed to - and hosted by - many different cloud platforms including AWS, GCP, and especially Vercel.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Todos
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [ ] Fetch a list of user data from the API
+- [ ] Determine whether to use API or client-side pagination
+- [ ] Setup mock data (dev type and skills) to add to users for filtering
+- [ ] Setup mock data for sidebar filtering options
+- [ ] Implement profile page
+- [ ] Implement contact modal
+- [ ] Implement 3-second timout to simulate contact sending
+- [ ] Implement search page
+- [ ] Implement pagination
+- [ ] Implement filtering
+- [ ] Create responsive layout styles
+- [ ] Nav and Footer improvements on smaller screens
+- [ ] Test HTML agains W3C Validator
