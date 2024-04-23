@@ -8,6 +8,9 @@ const config: Config = {
   ],
   prefix: "",
   theme: {
+    container: {
+      center: true
+    },
     extend: {},
   },
   plugins: [],
